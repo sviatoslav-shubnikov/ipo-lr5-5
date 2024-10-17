@@ -1,13 +1,13 @@
-string = input("Введите строку для нахождения слова 'Python': ")
+string = input("Введите строку для нахождения слова 'Python': ") # Получаем строку от пользователя через ввод
 
-python_word = "Python"
+python_word = "Python" # Определяем слово, которое будем искать, в нашем случае это Python
 
-count = 0
-words = string.split()
+count = 0 # Инициализируем счетчик для подсчета количества вхождений
+words = string.split() # Разбиваем строку на отдельные слова
 
-for word in words:
+for word in words: # Перебираем каждое слово в списке words
     
-    if word == python_word:
-        count += 1
+    if word == python_word:  # Если текущее слово совпадает с 'Python'
+        count += 1 # Увеличиваем счетчик на единицу
         
-print(f"Количество нахождений слова 'Python': {count}")
+print(f"Количество нахождений слова 'Python': {count}") # Выводим количество вхождений слова 'Python'
